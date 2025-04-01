@@ -48,14 +48,13 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
 
-        // Specific animations for children
         if (entry.target.classList.contains("hero")) {
           const h1 = entry.target.querySelector("h1");
           const btn = entry.target.querySelector(".btn");
           const img = entry.target.querySelector(".hero-image img");
           h1.style.animation = "bounceIn 1s ease-out";
           btn.style.animation = "bounceIn 1s ease-out 0.2s backwards";
-          img.style.animation = "fadeInUp 1s ease-out 0.4s backwards"; /* Animation for image */
+          img.style.animation = "fadeInUp 1s ease-out 0.4s backwards";
         }
 
         if (entry.target.classList.contains("about-section")) {

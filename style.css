@@ -430,6 +430,9 @@
       display: block;
     }
 
+    .project-card .btn{
+        margin-left:165px;
+    }
     .nav-links {
       display: none;
       flex-direction: column;
@@ -553,4 +556,9 @@
     .project-card img {
       height: 120px;
     }
+
+.project-card .btn{
+    margin-left: 65px;
+}
+
   }

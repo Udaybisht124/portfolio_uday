@@ -495,6 +495,10 @@
       gap: 20px;
     }
 
+    .about-section h2{
+        margin:auto;
+      }
+
     .project-card,
     .blog-card,
     .skill {
@@ -523,6 +527,14 @@
       font-size: 1.8rem; /* Further reduce font size for phones */
     }
 
+    
+    .about-section {
+        flex-direction: column;
+        gap: 30px;
+      }
+  .about-section h2{
+    margin: auto;
+  }
     .hero-image {
       max-width: 100%; /* Full width on very small screens */
       margin-top: 15px;

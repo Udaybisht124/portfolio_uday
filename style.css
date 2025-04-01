@@ -531,6 +531,7 @@
     .about-section {
         flex-direction: column;
         gap: 30px;
+        margin: auto;
       }
   .about-section h2{
     margin: auto;

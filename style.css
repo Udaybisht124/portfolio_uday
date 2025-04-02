@@ -528,7 +528,7 @@ footer {
     .timeline-item::before {
       left: 3px;
     }
-}
+  }
 
 @media (max-width: 480px) {
     .hero-text h1 {

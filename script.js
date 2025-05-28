@@ -1,11 +1,43 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
 
+// --- Theme Toggle Logic ---
+function setTheme(theme) {
+  if (theme === "light") {
+    document.body.classList.add("light-theme");
+    themeIcon.textContent = "🌞";
+  } else {
+    document.body.classList.remove("light-theme");
+    themeIcon.textContent = "🌙";
+  }
+  localStorage.setItem("theme", theme);
+}
+
+// On load: set theme based on localStorage or system preference
+(function () {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else {
+    // Detect system preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(prefersDark ? "dark" : "light");
+  }
+})();
+
+themeToggle.addEventListener("click", () => {
+  const isLight = document.body.classList.contains("light-theme");
+  setTheme(isLight ? "dark" : "light");
+});
+
+// --- Hamburger Menu ---
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// Back to Top Button
+// --- Back to Top Button ---
 const backToTop = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", () => {
@@ -22,9 +54,8 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Form Validation
+// --- Form Validation ---
 const form = document.getElementById("contact-form");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = form.querySelector('input[name="name"]').value;
@@ -39,7 +70,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// Intersection Observer for Animations
+// --- Intersection Observer for Animations ---
 const animateElements = document.querySelectorAll(".animate");
 
 const observer = new IntersectionObserver(
@@ -104,7 +135,7 @@ const observer = new IntersectionObserver(
 
 animateElements.forEach((el) => observer.observe(el));
 
-// Pulse for Back to Top
+// --- Pulse for Back to Top ---
 backToTop.addEventListener("animationend", () => {
   backToTop.style.animation = "pulse 1.5s infinite";
 });

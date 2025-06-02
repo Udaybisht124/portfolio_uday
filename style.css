@@ -102,7 +102,7 @@ body.light-theme #projects-section{
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: black;
+  background:#1d1d1d;
   position: fixed;
   width: 100%;
   top: 0;
@@ -400,8 +400,8 @@ body.light-theme #projects-section{
 /* Footer */
 footer {
   text-align: center;
-  padding: 80px 5%;
-  background:black;
+  padding:40px;
+  background:#1d1d1d;
   font-size: 0.9rem;
 }
 /* Back to Top */

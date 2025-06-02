@@ -87,6 +87,14 @@ body.light-theme .project-card {
   background: #f5f5f5;
   box-shadow: 1px 1px 1px grey;
 }
+body.light-theme #contact-section{
+  background-color:white;
+}
+
+body.light-theme #projects-section{
+  background-color:white;
+}
+
 
 /* Rest of your CSS (unchanged, as above) ... */
 .navbar {

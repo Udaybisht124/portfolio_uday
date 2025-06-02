@@ -17,6 +17,17 @@
   color: #00b4d8;
 }
 
+#btn1{
+  width: 100px;
+  height: 100px;
+background-color: rgb(118, 215, 215);
+color:black;
+
+}
+
+
+
+
 /* Default: Dark Theme */
 body {
   background: #1a1a1a;
@@ -129,9 +140,15 @@ body.light-theme #projects-section{
 }
 .nav-links a:hover {
   color: #00b4d8;
+  text-decoration: underline;
+  transition: 0.4s ease-in-out;
+  gap: 2px;
 }
 
+<<<<<<< HEAD
 /* ...existing code... */
+=======
+>>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 .nav-links li {
   position: relative;
   display: inline-block;
@@ -144,7 +161,11 @@ body.light-theme #projects-section{
   padding: 8px 0;
   position: relative;
   transition: color 0.3s;
+<<<<<<< HEAD
 }
+=======
+  gap: 6px;}
+>>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 
 .nav-links a::after {
   content: '';
@@ -161,15 +182,23 @@ body.light-theme #projects-section{
 
 .nav-links a.active,
 .nav-links a:hover {
+<<<<<<< HEAD
   color: #2196f3;
+=======
+  color: white;
+  text-decoration: none;
+>>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 }
 
 .nav-links a.active::after,
 .nav-links a:hover::after {
   width: 100%;
 }
+<<<<<<< HEAD
 /* ...existing code... */
 
+=======
+>>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 
 .hamburger {
   display: none;
@@ -361,7 +390,6 @@ body.light-theme #projects-section{
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
-  box-shadow: ;
   transition: transform 1s ease;
 }
 .project-card:hover img {

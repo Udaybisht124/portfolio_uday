@@ -145,10 +145,6 @@ body.light-theme #projects-section{
   gap: 2px;
 }
 
-<<<<<<< HEAD
-/* ...existing code... */
-=======
->>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 .nav-links li {
   position: relative;
   display: inline-block;
@@ -161,11 +157,7 @@ body.light-theme #projects-section{
   padding: 8px 0;
   position: relative;
   transition: color 0.3s;
-<<<<<<< HEAD
-}
-=======
   gap: 6px;}
->>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 
 .nav-links a::after {
   content: '';
@@ -182,23 +174,14 @@ body.light-theme #projects-section{
 
 .nav-links a.active,
 .nav-links a:hover {
-<<<<<<< HEAD
-  color: #2196f3;
-=======
   color: white;
   text-decoration: none;
->>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 }
 
 .nav-links a.active::after,
 .nav-links a:hover::after {
   width: 100%;
 }
-<<<<<<< HEAD
-/* ...existing code... */
-
-=======
->>>>>>> 917484a48beecb7ce5d2a1497b171447e161e77a
 
 .hamburger {
   display: none;

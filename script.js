@@ -27,6 +27,12 @@ function setTheme(theme) {
   }
 })();
 
+
+
+
+
+
+
 themeToggle.addEventListener("click", () => {
   const isLight = document.body.classList.contains("light-theme");
   setTheme(isLight ? "dark" : "light");
@@ -36,6 +42,33 @@ themeToggle.addEventListener("click", () => {
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+
+
+
+
+
+
+
+// ...existing code...
+// Animated underline for navbar links
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+// ...existing code...
+
+
+
+
+
+
+
+
+
+
 
 // --- Back to Top Button ---
 const backToTop = document.getElementById("back-to-top");
